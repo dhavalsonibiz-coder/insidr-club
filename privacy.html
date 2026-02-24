@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Insidr</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #ffffff; color: #374151; }
+    h1 { font-size: 32px; font-weight: 700; color: #111827; letter-spacing: -1px; margin-bottom: 8px; }
+    h2 { font-size: 18px; font-weight: 600; color: #111827; margin-top: 44px; margin-bottom: 18px; }
+    h3 { font-size: 14px; font-weight: 600; color: #374151; margin-top: 28px; margin-bottom: 12px; }
+    p  { font-size: 14px; line-height: 1.85; color: #6b7280; margin-bottom: 18px; }
+    ul { margin-bottom: 20px; padding-left: 0; list-style: none; }
+    ul li { font-size: 14px; line-height: 1.85; color: #6b7280; padding-left: 18px; position: relative; margin-bottom: 9px; }
+    ul li::before { content: "–"; position: absolute; left: 0; color: #9ca3af; }
+    hr { border: none; border-top: 1px solid #f3f4f6; margin: 48px 0; }
+    .arch-wide { margin-left: -64px; margin-right: -64px; }
+    @media (max-width: 820px) { .arch-wide { margin-left: 0; margin-right: 0; } }
+    a { color: #0f2744; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #e8f0fb; border-radius: 20px;
+      padding: 3px 12px; font-size: 11px; font-weight: 600;
+      color: #0f2744; margin-bottom: 8px;
+    }
+    /* Architecture diagram panels */
+    .arch-panel {
+      background: white;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 24px;
+      flex: 1;
+    }
+    .arch-panel-vault {
+      background: #0f2744;
+      border-radius: 20px;
+      padding: 24px;
+      flex: 1;
+    }
+    .arch-panel-output {
+      background: #e8f0fb;
+      border: 1.5px solid #c7d7ef;
+      border-radius: 20px;
+      padding: 24px;
+      flex: 1;
+    }
+    .arch-connector {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      padding: 8px;
+    }
+    @media (max-width: 767px) {
+      .arch-connector { padding: 4px 0; }
+    }
+    /* Section styling */
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .data-row {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 7px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    .data-row-label { font-size: 10px; color: #94a3b8; }
+    .data-row-value { font-size: 10px; font-weight: 600; color: #374151; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header style="height:56px;border-bottom:1px solid #e5e7eb;position:sticky;top:0;background:white;z-index:50;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+    <div style="max-width:760px;margin:0 auto;padding:0 24px;height:100%;display:flex;align-items:center;justify-content:space-between;">
+      <a href="index.html" style="display:flex;align-items:center;gap:6px;text-decoration:none;">
+        <span style="display:flex;gap:3px;">
+          <span style="width:9px;height:9px;border-radius:2px;background:black;display:inline-block;"></span>
+          <span style="width:9px;height:9px;border-radius:2px;background:black;display:inline-block;"></span>
+        </span>
+        <span style="font-weight:600;font-size:14px;color:black;">Insidr</span><span style="font-size:12px;font-weight:500;color:#0f2744;">.club</span>
+      </a>
+      <a href="index.html" style="font-size:13px;color:#6b7280;text-decoration:none;">← Back to home</a>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main style="max-width:680px;margin:0 auto;padding:56px 24px 96px;">
+
+    <div style="margin-bottom:32px;">
+      <div class="pill">
+        <span style="width:6px;height:6px;border-radius:50%;background:#0f2744;display:inline-block;"></span>
+        Privacy Policy
+      </div>
+      <h1>Privacy Policy</h1>
+      <p style="font-size:13px;color:#9ca3af;margin-bottom:0;">Last updated: February 2026 · Applies to all Insidr services</p>
+    </div>
+
+    <p>Insidr is built on a foundational belief: brands should be able to learn from the people who know them best — without ever knowing who those people are. This policy explains how we collect, use, and protect information across our platform.</p>
+
+    <hr>
+
+    <!-- ANONYMOUS ARCHITECTURE — Visual Section -->
+    <h2 style="margin-top:0;">Our Anonymous Architecture</h2>
+    <p>Privacy isn't a compliance checkbox for us — it's the core design principle that makes Insidr possible. Real identities never reach the brand. Here's how it works:</p>
+
+    <!-- 3-Panel Architecture Diagram -->
+    <div class="arch-wide" style="margin-top:28px;margin-bottom:36px;">
+      <div class="flex flex-col md:flex-row items-stretch gap-4 md:gap-3">
+
+        <!-- Panel 1: Consumer Input -->
+        <div class="arch-panel">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
+            <div style="width:30px;height:30px;border-radius:8px;background:#f1f5f9;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">👤</div>
+            <div>
+              <p class="section-label" style="color:#64748b;margin-bottom:0;">Consumer</p>
+              <p style="font-size:9px;color:#94a3b8;margin-bottom:0;">What they provide</p>
+            </div>
+          </div>
+          <div class="data-row">
+            <span class="data-row-label">Name</span>
+            <span class="data-row-value">Jane Smith</span>
+          </div>
+          <div class="data-row">
+            <span class="data-row-label">Email</span>
+            <span class="data-row-value">jane@email.com</span>
+          </div>
+          <div class="data-row">
+            <span class="data-row-label">Loyalty ID</span>
+            <span class="data-row-value">LYL-8812</span>
+          </div>
+          <div class="data-row" style="margin-bottom:14px;">
+            <span class="data-row-label">Location</span>
+            <span class="data-row-value">London, UK</span>
+          </div>
+          <p style="font-size:9px;color:#94a3b8;text-align:center;margin-bottom:0;">Real identity enters here</p>
+        </div>
+
+        <!-- Connector: Hash -->
+        <div class="arch-connector flex-col md:flex-row">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
+            <div class="hidden md:block" style="height:2px;width:12px;background:#cbd5e1;"></div>
+            <div class="md:hidden" style="width:2px;height:12px;background:#cbd5e1;"></div>
+            <div style="width:30px;height:30px;border-radius:50%;background:#0f2744;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <span style="font-size:12px;font-weight:700;color:white;">#</span>
+            </div>
+            <div class="hidden md:block" style="height:2px;width:12px;background:#cbd5e1;"></div>
+            <div class="md:hidden" style="width:2px;height:12px;background:#cbd5e1;"></div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Vault (middle) -->
+        <div class="arch-panel-vault" style="position:relative;overflow:hidden;">
+          <div style="position:absolute;top:-16px;right:-16px;width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,0.04);pointer-events:none;"></div>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
+            <div style="width:30px;height:30px;border-radius:8px;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">🔐</div>
+            <div>
+              <p class="section-label" style="color:#93c5fd;margin-bottom:0;">The Vault</p>
+              <p style="font-size:9px;color:#60a5fa;margin-bottom:0;">Identity sealed here</p>
+            </div>
+          </div>
+          <div style="background:rgba(255,255,255,0.08);border-radius:10px;padding:11px;margin-bottom:10px;">
+            <p style="font-size:9px;font-weight:700;color:#93c5fd;letter-spacing:0.5px;margin-bottom:7px;">ONE-WAY MAPPING</p>
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+              <span style="font-size:10px;color:#cbd5e1;text-decoration:line-through;opacity:0.6;">Jane Smith</span>
+              <span style="font-size:10px;color:#60a5fa;">→</span>
+              <span style="font-size:10px;font-weight:700;color:#bae6fd;">#4471</span>
+            </div>
+          </div>
+          <p style="font-size:9px;color:#64748b;line-height:1.6;margin-bottom:0;">Real identities never leave this vault. Brand-facing systems only ever receive the anonymous ID.</p>
+        </div>
+
+        <!-- Connector: Output -->
+        <div class="arch-connector flex-col md:flex-row">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
+            <div class="hidden md:block" style="height:2px;width:12px;background:#cbd5e1;"></div>
+            <div class="md:hidden" style="width:2px;height:12px;background:#cbd5e1;"></div>
+            <span style="font-size:7px;font-weight:700;color:#94a3b8;letter-spacing:1px;text-transform:uppercase;">Output</span>
+            <div class="hidden md:block" style="height:2px;width:12px;background:#cbd5e1;"></div>
+            <div class="md:hidden" style="width:2px;height:12px;background:#cbd5e1;"></div>
+          </div>
+        </div>
+
+        <!-- Panel 3: Consumer Cloud (what brand sees) -->
+        <div class="arch-panel-output">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
+            <div style="width:30px;height:30px;border-radius:8px;background:#dbeafe;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">☁️</div>
+            <div>
+              <p class="section-label" style="color:#1e4080;margin-bottom:0;">Consumer Cloud</p>
+              <p style="font-size:9px;color:#3b82f6;margin-bottom:0;">What the brand sees</p>
+            </div>
+          </div>
+          <div style="background:white;border-radius:10px;padding:12px;margin-bottom:10px;">
+            <p style="font-size:10px;font-weight:700;color:#0f2744;margin-bottom:7px;">Anonymous #4471</p>
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;"><div style="width:5px;height:5px;border-radius:50%;background:#3b82f6;flex-shrink:0;"></div><span style="font-size:10px;color:#64748b;">Health-conscious</span></div>
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;"><div style="width:5px;height:5px;border-radius:50%;background:#3b82f6;flex-shrink:0;"></div><span style="font-size:10px;color:#64748b;">Price-sensitive · Cleaning</span></div>
+            <div style="display:flex;align-items:center;gap:6px;"><div style="width:5px;height:5px;border-radius:50%;background:#3b82f6;flex-shrink:0;"></div><span style="font-size:10px;color:#64748b;">Loyalty member · 7 years</span></div>
+          </div>
+          <p style="font-size:9px;color:#64748b;text-align:center;margin-bottom:0;">No name. No email. No personal ID.</p>
+        </div>
+
+      </div>
+
+      <!-- Summary bullets below diagram -->
+      <div style="background:#f8fafc;border-radius:12px;padding:16px 20px;margin-top:20px;">
+        <ul style="margin-bottom:0;">
+          <li>Identities pseudonymised before entering the research layer</li>
+          <li>Brands see consumer attributes, never personal identifiers</li>
+          <li>All responses aggregated before surfacing to brands</li>
+          <li>No third-party data sharing or data broker relationships</li>
+          <li>Participants can view, export, or delete their data at any time</li>
+          <li>Designed to be GDPR and CCPA compliant by default</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2>1. Who We Are</h2>
+    <p>Insidr (operating as <strong>insidr.club</strong>) is a consumer insights platform that connects brands with their internal communities — employees, loyalty members, retail partners, and brand ambassadors — to conduct anonymous research. We are the data controller for personal data collected through our platform.</p>
+
+    <h2>2. Information We Collect</h2>
+
+    <h3>From brands (enterprise customers)</h3>
+    <ul>
+      <li>Account information: name, email address, company, role</li>
+      <li>Billing and payment details (processed by our payment provider)</li>
+      <li>Research content: questions, concepts, materials uploaded to the platform</li>
+      <li>Usage data: how you interact with the Insidr dashboard</li>
+    </ul>
+
+    <h3>From community participants</h3>
+    <ul>
+      <li>Onboarding data: provided by the brand (e.g., loyalty programme membership) used solely to create the anonymous profile</li>
+      <li>Survey and research responses submitted through missions and interviews</li>
+      <li>Consumer attributes derived from responses (e.g., "health-conscious", "price-sensitive") stored against the anonymous profile</li>
+      <li>Platform usage metadata (session timestamps, response times)</li>
+    </ul>
+
+    <p><strong>We do not collect</strong> biometric data, financial account information, government-issued IDs, or sensitive special-category data as defined under GDPR.</p>
+
+    <h2>3. How We Use Information</h2>
+
+    <h3>For brands</h3>
+    <ul>
+      <li>To provide and improve the Insidr platform</li>
+      <li>To deliver research results in aggregate and anonymised form</li>
+      <li>To send service-related communications and product updates</li>
+      <li>To comply with legal obligations</li>
+    </ul>
+
+    <h3>For participants</h3>
+    <ul>
+      <li>To build and maintain their anonymous consumer profile</li>
+      <li>To match them to relevant research missions within their community</li>
+      <li>To calculate and deliver rewards or incentives</li>
+      <li>To improve the research experience over time</li>
+    </ul>
+
+    <h2>4. Legal Basis for Processing</h2>
+    <p>We process personal data under the following legal bases:</p>
+    <ul>
+      <li><strong>Contract:</strong> processing necessary to deliver the Insidr service to brands</li>
+      <li><strong>Legitimate interests:</strong> improving platform functionality and preventing fraud</li>
+      <li><strong>Consent:</strong> where participants have explicitly opted in to a community</li>
+      <li><strong>Legal obligation:</strong> where required by applicable law</li>
+    </ul>
+
+    <h2>5. Data Retention</h2>
+    <p>Brand account data is retained for the duration of the contract plus 2 years. Anonymous participant profiles are retained for as long as the participant remains active in a community. Upon withdrawal or deletion request, profiles are fully purged within 30 days.</p>
+
+    <h2>6. Data Sharing</h2>
+    <p>We do not sell personal data. We may share data with:</p>
+    <ul>
+      <li>Sub-processors who help us operate the platform (cloud hosting, payment processing, analytics) — all bound by data processing agreements</li>
+      <li>Law enforcement or regulatory authorities, where required by law</li>
+      <li>Acquirers or successors, in the event of a merger or acquisition</li>
+    </ul>
+
+    <h2>7. International Transfers</h2>
+    <p>Data may be processed in countries outside your own. Where we transfer data outside the UK or EEA, we rely on Standard Contractual Clauses or other approved transfer mechanisms to ensure adequate protection.</p>
+
+    <h2>8. Your Rights</h2>
+    <p>Depending on your jurisdiction, you may have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Correct inaccurate data</li>
+      <li>Request deletion of your data ("right to be forgotten")</li>
+      <li>Object to or restrict certain processing</li>
+      <li>Request portability of your data</li>
+      <li>Withdraw consent at any time (where processing is consent-based)</li>
+    </ul>
+    <p>To exercise any of these rights, email us at <a href="mailto:hello@insidr.club">hello@insidr.club</a>. We will respond within 30 days.</p>
+
+    <h2>9. Security</h2>
+    <p>We implement industry-standard security measures including encryption in transit (TLS 1.2+) and at rest, access controls, regular security audits, and incident response procedures. No method of transmission over the internet is 100% secure, but we take every reasonable precaution.</p>
+
+    <h2>10. Cookies</h2>
+    <p>We use strictly necessary cookies to operate the platform and, with your consent, analytics cookies to understand how the platform is used. You can manage cookie preferences at any time through your browser settings.</p>
+
+    <h2>11. Children</h2>
+    <p>Insidr is not intended for users under 16 years of age. We do not knowingly collect data from children.</p>
+
+    <h2>12. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. Material changes will be communicated via email to registered users. The "last updated" date at the top of this page reflects the most recent revision.</p>
+
+    <h2>13. Contact Us</h2>
+    <p>For privacy-related questions, requests, or concerns:</p>
+    <ul>
+      <li>Email: <a href="mailto:hello@insidr.club">hello@insidr.club</a></li>
+      <li>Website: <a href="https://insidr.club">insidr.club</a></li>
+    </ul>
+
+    <hr>
+    <p style="font-size:12px;color:#d1d5db;">© 2026 Insidr. All rights reserved. · <a href="index.html" style="color:#9ca3af;">Home</a> · <a href="about.html" style="color:#9ca3af;">About</a></p>
+
+  </main>
+
+</body>
+</html>

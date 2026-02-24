@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Insidr</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #ffffff; color: #374151; }
+    .notion-h1 { font-size: 36px; font-weight: 700; color: #111827; letter-spacing: -1.2px; line-height: 1.2; margin-bottom: 6px; }
+    .notion-h2 { font-size: 20px; font-weight: 600; color: #111827; margin-top: 48px; margin-bottom: 12px; border-bottom: 1px solid #f3f4f6; padding-bottom: 8px; }
+    .notion-h3 { font-size: 15px; font-weight: 600; color: #374151; margin-top: 24px; margin-bottom: 6px; }
+    .notion-p  { font-size: 15px; line-height: 1.8; color: #4b5563; margin-bottom: 16px; }
+    .notion-ul { margin-bottom: 16px; padding-left: 0; list-style: none; }
+    .notion-ul li { font-size: 15px; line-height: 1.8; color: #4b5563; padding-left: 20px; position: relative; margin-bottom: 4px; }
+    .notion-ul li::before { content: "→"; position: absolute; left: 0; color: #c4b5fd; font-size: 12px; top: 3px; }
+    .callout {
+      background: #f9fafb;
+      border-left: 3px solid #7c3aed;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 24px 0;
+    }
+    .callout p { margin-bottom: 0; font-size: 14px; color: #6b7280; font-style: italic; }
+    .tag {
+      display: inline-block;
+      background: #ede9fe;
+      color: #7c3aed;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 20px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+    .divider { border: none; border-top: 1px solid #f3f4f6; margin: 36px 0; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header style="height:56px;border-bottom:1px solid #e5e7eb;position:sticky;top:0;background:white;z-index:50;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+    <div style="max-width:760px;margin:0 auto;padding:0 24px;height:100%;display:flex;align-items:center;justify-content:space-between;">
+      <a href="index.html" style="display:flex;align-items:center;gap:6px;text-decoration:none;">
+        <span style="display:flex;gap:3px;">
+          <span style="width:9px;height:9px;border-radius:2px;background:black;display:inline-block;"></span>
+          <span style="width:9px;height:9px;border-radius:2px;background:black;display:inline-block;"></span>
+        </span>
+        <span style="font-weight:600;font-size:14px;color:black;">Insidr</span><span style="font-size:12px;font-weight:500;color:#7c3aed;">.club</span>
+      </a>
+      <a href="index.html" style="font-size:13px;color:#6b7280;text-decoration:none;">← Back to home</a>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main style="max-width:680px;margin:0 auto;padding:56px 24px 96px;">
+
+    <!-- Page label -->
+    <p style="font-size:12px;font-weight:600;color:#9ca3af;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px;">About</p>
+
+    <h1 class="notion-h1">We're building the world's first inside-out research platform.</h1>
+    <p style="font-size:13px;color:#9ca3af;margin-bottom:32px;">Last updated February 2026 · <span style="color:#7c3aed;font-weight:500;">Early stage · Pilot phase</span></p>
+
+    <div class="callout">
+      <p>"The people who know your brand best are already on your payroll, in your loyalty app, or stocking your shelves. Insidr gives you a direct line to them — anonymously, ethically, and in hours."</p>
+    </div>
+
+    <hr class="divider">
+
+    <h2 class="notion-h2">What we're building</h2>
+
+    <p class="notion-p">Insidr is a consumer insights platform that helps large brands run research through communities they already own — employees, loyalty members, retail partners, and brand ambassadors — rather than recruiting strangers from third-party panels.</p>
+
+    <p class="notion-p">The platform does three things:</p>
+
+    <ul class="notion-ul">
+      <li>Builds anonymous consumer profiles for every participant in a brand's community, enriching them with every interaction</li>
+      <li>Lets brands run any research method (micro-missions, AI-moderated interviews, co-creation sessions, focus groups) against those communities in hours rather than weeks</li>
+      <li>Surfaces AI-powered insights that connect findings across studies, so understanding compounds over time instead of living in a forgotten deck</li>
+    </ul>
+
+    <p class="notion-p">We call the layer that stores all these profiles <strong>the Consumer Cloud</strong>. Think of it as a living, anonymous intelligence layer for a brand's most important people.</p>
+
+    <hr class="divider">
+
+    <h2 class="notion-h2">The problem we're solving</h2>
+
+    <p class="notion-p">The global market research industry spends somewhere between $40–80 billion a year helping brands understand consumers. Most of that money goes to agencies recruiting strangers — people with no relationship to the brand, no context about its products, and no reason to give considered, honest answers.</p>
+
+    <p class="notion-p">Meanwhile, every brand already has people who know exactly what's working and what isn't:</p>
+
+    <ul class="notion-ul">
+      <li>The sales rep who hears competitor comparisons at point of sale every day</li>
+      <li>The loyalty member who's been buying for 7 years and switched one category last quarter</li>
+      <li>The retail partner who sees which SKUs get passed over on the shelf</li>
+      <li>The brand ambassador who knows the objections customers raise in the wild</li>
+    </ul>
+
+    <p class="notion-p">Nobody is systematically asking these people. Insidr is building the infrastructure to change that — at scale, in real time, and with privacy built into the architecture from the ground up.</p>
+
+    <hr class="divider">
+
+    <h2 class="notion-h2">The founder</h2>
+
+    <div style="display:flex;align-items:flex-start;gap:16px;margin-bottom:24px;">
+      <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#ede9fe,#c4b5fd);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;color:#7c3aed;">D</div>
+      <div>
+        <p style="font-size:15px;font-weight:600;color:#111827;margin-bottom:2px;">Dhaval Chokshi</p>
+        <p style="font-size:13px;color:#9ca3af;margin-bottom:0;">Founder &amp; CEO · insidr.club</p>
+      </div>
+    </div>
+
+    <p class="notion-p">Dhaval grew up in Gujarat, India, and moved to Mumbai at 18. Over the past seven years he has been a two-time founder, brand strategist, and consumer insights professional — working with brands including Reebok, H&M India, and Delhi Airport through internships at DDB Mudra, and most recently running global consumer insights at Opella, one of the world's largest consumer healthcare companies. He co-founded Vinci Stationery, growing it to a community of 10,000+ customers and collaborating with 1,500+ independent artists. He graduated from Narsee Monjee College, Mumbai (9.5/10 SGPI in Marketing) and is currently completing a Master in Management at ESSEC Business School in Paris, where he was selected for the ESSEC–Accenture Strategic Business Analytics Chair.</p>
+
+    <p class="notion-p">He founded Insidr in 2024 after seeing — across agencies, startups, and global brands — how much valuable consumer knowledge sits untapped inside organisations: in sales teams, loyalty programmes, and partner networks. Traditional research, he found, rarely touched any of it.</p>
+
+    <div style="margin:16px 0 24px;">
+      <span class="tag">Consumer Insights</span>
+      <span class="tag">Brand Strategy</span>
+      <span class="tag">Data &amp; AI</span>
+      <span class="tag">FMCG</span>
+      <span class="tag">ESSEC MiM</span>
+    </div>
+
+    <h3 class="notion-h3">The team is growing</h3>
+    <p class="notion-p">A technical co-founder is currently in the process of joining. More details to follow.</p>
+
+    <hr class="divider">
+
+    <h2 class="notion-h2">Where we are</h2>
+
+    <p class="notion-p">We are currently in <strong>private pilot</strong>, working with a small number of brand partners to validate the core product and refine the experience. We are not yet publicly available.</p>
+
+    <p class="notion-p">If you're a brand that wants to be part of the pilot, we'd love to hear from you.</p>
+
+    <a href="https://calendar.app.google/rDraNcn8nZbFzQGK8" target="_blank" style="display:inline-flex;align-items:center;background:linear-gradient(rgb(64,64,64) 0%, rgb(26,26,26) 100%);color:white;border-radius:50px;padding:12px 24px;font-size:14px;font-weight:500;text-decoration:none;box-shadow:rgba(255,255,255,0.25) 0px 1px 1px 0px inset, rgba(0,0,0,0.15) 3px 3px 3px 0px;margin-bottom:32px;">
+      Book a pilot call
+    </a>
+
+    <hr class="divider">
+
+    <h2 class="notion-h2">Our principles</h2>
+
+    <h3 class="notion-h3">Privacy is architecture, not policy</h3>
+    <p class="notion-p">Brands never learn who their consumers are as individuals. All identities are pseudonymised before they enter our research layer. The insight is always aggregate; the person is always protected. <a href="privacy.html" style="color:#7c3aed;text-decoration:none;">Read our privacy policy →</a></p>
+
+    <h3 class="notion-h3">Value flows both ways</h3>
+    <p class="notion-p">Communities participate because they get something back — rewards, influence, and a genuine voice in the brands they care about. Research that doesn't reward participants doesn't work long-term.</p>
+
+    <h3 class="notion-h3">Speed and depth aren't a trade-off</h3>
+    <p class="notion-p">Getting answers in 4 hours from people who deeply know your brand is better than waiting 6 weeks for results from strangers. We're building the infrastructure to make that the default.</p>
+
+    <h3 class="notion-h3">Institutional knowledge should compound</h3>
+    <p class="notion-p">Every study you run should make the next one smarter. Insights shouldn't expire when a PowerPoint is filed. Insidr is designed to be a persistent knowledge layer, not a series of one-off projects.</p>
+
+    <hr class="divider">
+
+    <p style="font-size:13px;color:#9ca3af;">Got questions? Reach us at <a href="mailto:hello@insidr.club" style="color:#7c3aed;text-decoration:none;">hello@insidr.club</a> · <a href="https://www.linkedin.com/in/dhaval-chokshi/" target="_blank" style="color:#7c3aed;text-decoration:none;">LinkedIn</a></p>
+    <p style="font-size:12px;color:#d1d5db;margin-top:32px;">© 2026 Insidr · <a href="index.html" style="color:#9ca3af;text-decoration:none;">Home</a> · <a href="privacy.html" style="color:#9ca3af;text-decoration:none;">Privacy</a></p>
+
+  </main>
+
+</body>
+</html>
