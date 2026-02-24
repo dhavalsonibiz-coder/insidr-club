@@ -121,6 +121,61 @@
       .bento-cta { display: none !important; }
       .bento-bg-num { font-size: 80px; }
     }
+
+    /* ── Evervault Touchpoint Cards ── */
+    @keyframes ever-pulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
+    .ever-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .ever-card {
+      position: relative; overflow: hidden; border-radius: 20px;
+      background: #111827; border: 1px solid rgba(255,255,255,0.06);
+      min-height: 200px; display: flex; flex-direction: column;
+      justify-content: flex-end; cursor: default;
+      transition: border-color 0.3s;
+    }
+    .ever-card:hover { border-color: rgba(124,58,237,0.35); }
+    .ever-noise, .ever-glow {
+      position: absolute; inset: 0; pointer-events: none;
+      opacity: 0; transition: opacity 0.2s;
+    }
+    .ever-noise { mix-blend-mode: overlay; }
+    .ever-glow  { background: linear-gradient(135deg, rgba(124,58,237,0.65), rgba(15,39,68,0.75)); }
+    .ever-chars {
+      position: absolute; inset: 0; margin: 0;
+      font-family: monospace; font-size: 10px; line-height: 1.2;
+      color: white; font-weight: 700; word-break: break-all;
+      white-space: pre-wrap; padding: 12px;
+    }
+    .ever-content { position: relative; z-index: 2; padding: 22px; }
+    .ever-tag {
+      display: block; font-size: 9px; font-weight: 700;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      color: #6d28d9; margin-bottom: 10px;
+      transition: color 0.2s;
+    }
+    .ever-card:hover .ever-tag { color: #c4b5fd; }
+    .ever-title {
+      font-size: 14px; font-weight: 700; color: #e2e8f0;
+      line-height: 1.45; margin-bottom: 8px; letter-spacing: -0.3px;
+      transition: color 0.2s;
+    }
+    .ever-card:hover .ever-title { color: white; }
+    .ever-desc {
+      font-size: 11.5px; color: #4b5563; line-height: 1.6;
+      transition: color 0.2s;
+    }
+    .ever-card:hover .ever-desc { color: #94a3b8; }
+    .ever-num {
+      position: absolute; top: 14px; right: 16px; z-index: 2;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.5px;
+      color: rgba(255,255,255,0.08);
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    @media (max-width: 860px)  { .ever-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 540px)  { .ever-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body class="min-h-screen">
@@ -710,6 +765,100 @@
 
 
 <!-- ============================================================ -->
+<!-- TOUCHPOINTS — EVERVAULT CARDS                                 -->
+<!-- ============================================================ -->
+<section style="padding:80px 24px;background:#0a0f1e;position:relative;overflow:hidden;">
+
+  <!-- Subtle dot-grid background -->
+  <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.04) 1px,transparent 1px);background-size:28px 28px;pointer-events:none;"></div>
+
+  <div style="max-width:1000px;margin:0 auto;position:relative;">
+
+    <!-- Header -->
+    <div class="text-center" style="margin-bottom:52px;">
+      <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(109,40,217,0.15);border:1px solid rgba(109,40,217,0.3);border-radius:20px;padding:5px 16px;margin-bottom:20px;">
+        <span style="width:6px;height:6px;border-radius:50%;background:#a78bfa;display:inline-block;animation:ever-pulse 2s infinite;"></span>
+        <span style="font-size:11px;font-weight:700;color:#a78bfa;letter-spacing:1.5px;text-transform:uppercase;">Coming soon</span>
+      </div>
+      <h2 class="section-h2" style="font-size:40px;font-weight:700;letter-spacing:-1.5px;line-height:1.15;color:white;margin-bottom:16px;">Capture insight at the moment it happens</h2>
+      <p style="font-size:15px;color:#64748b;max-width:500px;margin:0 auto;line-height:1.75;">Every brand already has the touchpoints — post-delivery, a return, a loyalty milestone. Right now they collect a number. Insidr replaces the form with a 60-second AI conversation that feeds directly into your Consumer Cloud.</p>
+    </div>
+
+    <!-- Cards -->
+    <div class="ever-grid">
+
+      <div class="ever-card" onmousemove="everMove(event,this)" onmouseleave="everLeave(this)">
+        <div class="ever-noise"><p class="ever-chars"></p></div>
+        <div class="ever-glow"></div>
+        <div class="ever-num">01</div>
+        <div class="ever-content">
+          <span class="ever-tag">Post-Delivery</span>
+          <h3 class="ever-title">Did it match what they imagined when they clicked buy?</h3>
+          <p class="ever-desc">Not just happy or unhappy. What was the expectation gap? That's the actual fix.</p>
+        </div>
+      </div>
+
+      <div class="ever-card" onmousemove="everMove(event,this)" onmouseleave="everLeave(this)">
+        <div class="ever-noise"><p class="ever-chars"></p></div>
+        <div class="ever-glow"></div>
+        <div class="ever-num">02</div>
+        <div class="ever-content">
+          <span class="ever-tag">The Return</span>
+          <h3 class="ever-title">A dropdown says "changed my mind." A conversation tells you it's the size chart.</h3>
+          <p class="ever-desc">One return conversation outperforms a thousand dropdowns.</p>
+        </div>
+      </div>
+
+      <div class="ever-card" onmousemove="everMove(event,this)" onmouseleave="everLeave(this)">
+        <div class="ever-noise"><p class="ever-chars"></p></div>
+        <div class="ever-glow"></div>
+        <div class="ever-num">03</div>
+        <div class="ever-content">
+          <span class="ever-tag">Subscription Skip</span>
+          <h3 class="ever-title">They didn't leave — they have three months of product in their bathroom.</h3>
+          <p class="ever-desc">Completely different problem. Completely different fix.</p>
+        </div>
+      </div>
+
+      <div class="ever-card" onmousemove="everMove(event,this)" onmouseleave="everLeave(this)">
+        <div class="ever-noise"><p class="ever-chars"></p></div>
+        <div class="ever-glow"></div>
+        <div class="ever-num">04</div>
+        <div class="ever-content">
+          <span class="ever-tag">Shelf Intelligence</span>
+          <h3 class="ever-title">Retail staff know what shoppers pick up and put back. Ask them.</h3>
+          <p class="ever-desc">The answer is already in the aisle — weeks before sell-out data arrives.</p>
+        </div>
+      </div>
+
+      <div class="ever-card" onmousemove="everMove(event,this)" onmouseleave="everLeave(this)">
+        <div class="ever-noise"><p class="ever-chars"></p></div>
+        <div class="ever-glow"></div>
+        <div class="ever-num">05</div>
+        <div class="ever-content">
+          <span class="ever-tag">Post-Launch</span>
+          <h3 class="ever-title">The team that shipped it knows what the pre-launch test missed.</h3>
+          <p class="ever-desc">Capture it in the 48 hours after go-live, before everyone moves on.</p>
+        </div>
+      </div>
+
+      <div class="ever-card" onmousemove="everMove(event,this)" onmouseleave="everLeave(this)">
+        <div class="ever-noise"><p class="ever-chars"></p></div>
+        <div class="ever-glow"></div>
+        <div class="ever-num">06</div>
+        <div class="ever-content">
+          <span class="ever-tag">Loyal Customer</span>
+          <h3 class="ever-title">Your top 5% LTV customer has been buying for years. Nobody has asked them why.</h3>
+          <p class="ever-desc">A coupon is not the same as a conversation.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================ -->
 <!-- COMMUNITY INCENTIVES — J-CURVE                               -->
 <!-- ============================================================ -->
 <section style="padding:72px 24px;background:white;">
@@ -885,6 +1034,23 @@
   const mobileMenu = document.getElementById('mobile-menu');
   burgerBtn.addEventListener('click', () => mobileMenu.classList.toggle('open'));
   function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+
+  // Evervault touchpoint cards
+  const _ec = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  function everRand(n) { let s=''; for(let i=0;i<n;i++) s+=_ec[Math.floor(Math.random()*_ec.length)]; return s; }
+  function everMove(e, card) {
+    const r = card.getBoundingClientRect();
+    const mask = `radial-gradient(200px at ${e.clientX-r.left}px ${e.clientY-r.top}px,white,transparent)`;
+    const noise = card.querySelector('.ever-noise');
+    const glow  = card.querySelector('.ever-glow');
+    noise.style.cssText += `;mask-image:${mask};-webkit-mask-image:${mask};opacity:1`;
+    glow.style.cssText  += `;mask-image:${mask};-webkit-mask-image:${mask};opacity:1`;
+    card.querySelector('.ever-chars').textContent = everRand(1500);
+  }
+  function everLeave(card) {
+    card.querySelector('.ever-noise').style.opacity = '0';
+    card.querySelector('.ever-glow').style.opacity  = '0';
+  }
 
   // Close mobile menu on outside click
   document.addEventListener('click', (e) => {
